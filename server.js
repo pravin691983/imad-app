@@ -27,6 +27,7 @@ function createHtmlTemplate(data) {
     <html>
     	<head>
     		<title>${title}</title>
+    		<link href="/ui/style.css" rel="stylesheet" />
     	</head>
     	<body>
     		<div class='Container'>
