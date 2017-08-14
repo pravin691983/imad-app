@@ -72,7 +72,7 @@ function createHtmlTemplate(data) {
 
 app.get('/:articleName', function(req, res) {
     //articleName = article-one, article-tow
-    var tempArticleName = req.param.articleName;
+    var tempArticleName = req.params.articleName;
     res.send(createHtmlTemplate(articles[tempArticleName]));
     //res.send(createHtmlTemplate(articleOne))
 });
