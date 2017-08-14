@@ -30,7 +30,7 @@ var articles = {
 
 function createHtmlTemplate(data) {
     
-    var title = data.title;
+    //var title = data.title;
     var date = data.date;
     var heading = data.heading;
     var content = data.content;
@@ -38,7 +38,7 @@ function createHtmlTemplate(data) {
     var htmlContent = `
     <html>
     	<head>
-    		<title>${title}</title>
+    		<title>Test</title>
     		<link href="/ui/style.css" rel="stylesheet" />
     	</head>
     	<body>
