@@ -58,7 +58,7 @@ function createHtmlTemplate(data) {
 }
 
 app.get('/article-one', function(req, res) {
-    res.send(createHtmlTemplate(articleOne))
+    res.send(createHtmlTemplate(articleOne));
 });
 
 app.get('/', function (req, res) {
