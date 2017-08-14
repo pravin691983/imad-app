@@ -72,8 +72,8 @@ function createHtmlTemplate(data) {
 
 app.get('/:articleName', function(req, res) {
     //articleName = article-one, article-tow
-    var articleName = req.param.articleName;
-    res.send(createHtmlTemplate(articles[articleName]));
+    var tempArticleName = req.param.articleName;
+    res.send(createHtmlTemplate(articles[tempArticleName]));
     //res.send(createHtmlTemplate(articleOne))
 });
 
