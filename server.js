@@ -5,6 +5,16 @@ var path = require('path');
 var app = express();
 app.use(morgan('combined'));
 
+    var articleOne = {
+        title : 'First article | Pravin Tawade',
+        heading : 'First article',
+        date : '4th Aug 2017',
+        content : `
+            <p>
+                This is first page content ...!!!
+            </p>`
+    };
+    
 var articles = {
     
     'article-one' : {
@@ -71,8 +81,9 @@ function createHtmlTemplate(data) {
 
 app.get('/:articleName', function(req, res) {
     //articleName = article-one, article-tow
-    var articleName = req.param.articleName;
-    res.send(createHtmlTemplate(articles[articleName]));
+    //var articleName = req.param.articleName;
+    //res.send(createHtmlTemplate(articles[articleName]));
+    res.send(createHtmlTemplate(articleOne))
 });
 
 app.get('/', function (req, res) {
